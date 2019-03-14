@@ -13,7 +13,6 @@ app.use(express.json());
 
 //Access the controller (routes) folder
 app.use(controllers);
-
 //Access the public folder
 app.use(express.static("public"));
 
