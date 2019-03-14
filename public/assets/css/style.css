@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+}
+
+.middleDiv{
+    margin-top: 20px;
+    border: 1px solid lightsalmon;
+}
+
+.burgersToEat, .burgersToDevour {
+    margin-top: 20px;
+    background-color: lightsalmon;
+    height: 533px;
+    overflow-y: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: orangered;
+    font-family: "Comic Sans MS";
+    font-size: 50px;
+}
+
+p {
+    color: orangered;
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+
+button:hover {
+    background-color: lightsalmon;
+}
+
+h3 {
+    color: orangered;
+    font-family: "Comic Sans MS";
+    text-align: center; 
+    font-size: 25px;
+    background-color: white;
+    padding: 10px;
+}
+
+button {
+    background-color: white;
+    color: orangered;
+    height: 40px;
+    width: 150px;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+form {
+    width: 400px;
+}
