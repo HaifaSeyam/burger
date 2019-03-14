@@ -35,6 +35,17 @@
       <!-- Start of burgerToDevour div -->
       <div class="col s4 burgersToDevour">
           <h3>Devoured Burgers</h3>
+          <!-- Loop through the burgers object -->
+          {{#each burgers}}
+          <!-- if devoured is true display the burger name and id into this div -->
+          {{#if this.devoured}}
+            <div id="burgerDiv">
+              <p id="burgersList">{{this.id}}. {{this.burger_name}}</p>
+            </div>
+          {{/if}}
+          <!-- End of if condition -->
+        {{/each}}
+        <!-- End of the Loop through the burgers object -->
       </div>
       <!-- End of burgerToDevour div -->
     </div>

@@ -64,7 +64,7 @@ button {
     font-size: 20px;
 }
 
-#devBtn {
+#devBtn, #undevBtn {
     font-size: 15px;
     height: 30px;
     width: 90px;
@@ -74,4 +74,9 @@ button {
 
 form {
     width: 400px;
+}
+
+#burgerDiv {
+    margin-left: 10px;
+    margin-right: 10px;
 }

@@ -15,5 +15,19 @@ router.get("/", function(req, res) {
   });
 });
 
+// Add one burger
+router.post("/add", function(req, res) {
+  var burger_Name = req.body.name;
+
+  burger.insertOne(["burger_name"], [burger_Name], function(result) {
+
+    // Send back the ID and name of the burger
+    res.json({ 
+      id: result.insertId,
+      burger_name: burger_Name
+    });
+  })
+});
+
 // Export routes for server.js to use.
 module.exports = router;

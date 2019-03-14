@@ -4,4 +4,15 @@ $("#submitBtn").on("click", function(event){
 
     var burgerName = $("#burgerName").val().trim();
 
+    if (burgerName === "") {
+      return;
+    } else {
+      $.ajax({
+        url: "/add",
+        method: "POST",
+        data: {name: burgerName}
+    }).then(function(){
+        location.reload();
+    });
+    }
 });

@@ -12,6 +12,18 @@ var orm = {
       }
       cb(result);
     });
+  },
+  //insertOne function to insert one burger into the DB
+  insertOne: function(table, cols, vals, cb) {
+    var queryString = "INSERT INTO " + table + "(" + cols + ") " + "VALUES (?)";
+
+    connection.query(queryString, vals, function(err, result) {
+      if (err) {
+        throw err;
+      }
+
+      cb(result);
+    });
   }
 };
 
