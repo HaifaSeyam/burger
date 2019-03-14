@@ -5,6 +5,18 @@
       <!-- Start of burgersToEat div -->
       <div class="col s4 burgersToEat">
         <h3>Burgers Wanna Eat</h3>
+        <!-- Loop through the burgers object -->
+        {{#each burgers}}
+        <!-- if devoured is false display the burger name and id into this div -->
+        {{#unless this.devoured}}
+            <div id="burgerDiv">
+              <p id="burgersList">{{this.id}}. {{this.burger_name}}</p>
+              <button id="devBtn" data-burgerid="{{this.id}}" data-state="{{this.devoured}}">Devour</button>
+            </div>
+          {{/unless}}
+          <!-- End of if condition -->
+        {{/each}}
+        <!-- End of the Loop through the burgers object -->
       </div>
       <!-- End of burgersToEat div -->
       <!-- Start of input form div -->
